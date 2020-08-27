@@ -1,0 +1,121 @@
+object FrameToast: TFrameToast
+  HitTest = False
+  Margins.Left = 20.000000000000000000
+  Margins.Top = 20.000000000000000000
+  Margins.Right = 20.000000000000000000
+  Margins.Bottom = 20.000000000000000000
+  Size.Width = 300.000000000000000000
+  Size.Height = 70.000000000000000000
+  Size.PlatformDefault = False
+  object retContent: TALRectangle
+    Align = Client
+    ClipChildren = True
+    Fill.Color = claWhite
+    Size.Width = 300.000000000000000000
+    Size.Height = 70.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFFF4F4F4
+    XRadius = 5.000000000000000000
+    YRadius = 5.000000000000000000
+    OnClick = retContentClick
+    object retLine: TALRectangle
+      Align = Left
+      ClipParent = True
+      Corners = [TopLeft, BottomLeft]
+      Fill.Color = xFFFFC021
+      HitTest = False
+      Size.Width = 5.000000000000000000
+      Size.Height = 70.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 2.500000000000000000
+      YRadius = 2.500000000000000000
+    end
+    object lytText: TALLayout
+      Align = Client
+      Size.Width = 205.000000000000000000
+      Size.Height = 70.000000000000000000
+      Size.PlatformDefault = False
+      object txtTitle: TALText
+        AutoSize = True
+        Position.X = 8.000000000000000000
+        Position.Y = 14.000000000000000000
+        Size.Width = 52.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Aten'#231#227'o'
+        TextSettings.Font.Family = 'Roboto'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF2C2E37
+      end
+      object txtMessage: TALText
+        AutoSize = True
+        Position.X = 8.000000000000000000
+        Position.Y = 38.000000000000000000
+        Size.Width = 183.000000000000000000
+        Size.Height = 15.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Esse '#233' um exemplo de mensagem'
+        TextSettings.Font.Family = 'Roboto'
+        TextSettings.FontColor = xFFA8AAAE
+      end
+    end
+    object lytClose: TALLayout
+      Align = Right
+      Position.X = 260.000000000000000000
+      Size.Width = 40.000000000000000000
+      Size.Height = 70.000000000000000000
+      Size.PlatformDefault = False
+      object imgClose: TPath
+        Align = Center
+        Data.Path = {
+          0E0000000000000000009841B81ECD400100000052B88C410000A04001000000
+          00004041A470294101000000B81ECD400000A040010000000000A040B81ECD40
+          01000000A470294100004041010000000000A04052B88C4101000000B81ECD40
+          0000984101000000000040415C8F56410100000052B88C410000984101000000
+          0000984152B88C41010000005C8F5641000040410100000000009841B81ECD40
+          0300000000009841B81ECD40}
+        Fill.Color = xFFC0C1C4
+        HitTest = False
+        Size.Width = 15.000000000000000000
+        Size.Height = 15.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+    end
+    object lytIcon: TALLayout
+      Align = Left
+      Position.X = 5.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 70.000000000000000000
+      Size.PlatformDefault = False
+      object imgIcon: TPath
+        Align = Center
+        Data.Path = {
+          1600000000000000000050410000504101000000000030410000504101000000
+          000030410000E04001000000000050410000E040000000000000504100008841
+          0100000000003041000088410100000000003041000070410100000000005041
+          0000704100000000000040410000004002000000D544CF400000004002000000
+          00000040D544CF400200000000000040000040410200000000000040CB2E8C41
+          02000000D544CF400000B04102000000000040410000B04102000000CB2E8C41
+          0000B041020000000000B041CB2E8C41020000000000B0410000404102000000
+          0000B041D544CF4002000000CB2E8C4100000040020000000000404100000040
+          030000000000404100000040}
+        Fill.Color = xFFFFC021
+        HitTest = False
+        Size.Width = 25.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+    end
+    object sdwContent: TShadowEffect
+      Distance = 0.500000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.200000002980232200
+      Opacity = 0.200000002980232200
+      ShadowColor = claBlack
+    end
+  end
+end

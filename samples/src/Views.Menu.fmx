@@ -1,0 +1,72 @@
+object FrmMenu: TFrmMenu
+  Left = 0
+  Top = 0
+  Caption = 'Toast'
+  ClientHeight = 500
+  ClientWidth = 350
+  Quality = HighQuality
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object retContent: TRectangle
+    Align = Contents
+    Fill.Color = xFFF4F4F4
+    Size.Width = 350.000000000000000000
+    Size.Height = 500.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object btnError: TButton
+      Anchors = []
+      StyledSettings = [Style, FontColor]
+      Position.X = 181.000000000000000000
+      Position.Y = 197.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Error'
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 15.000000000000000000
+      OnClick = btnErrorClick
+    end
+    object btnInfo: TButton
+      Anchors = []
+      StyledSettings = [Style, FontColor]
+      Position.X = 69.000000000000000000
+      Position.Y = 253.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Info'
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 15.000000000000000000
+      OnClick = btnInfoClick
+    end
+    object btnSuccess: TButton
+      Anchors = []
+      StyledSettings = [Style, FontColor]
+      Position.X = 181.000000000000000000
+      Position.Y = 253.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Success'
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 15.000000000000000000
+      OnClick = btnSuccessClick
+    end
+    object btnWarning: TButton
+      Anchors = []
+      StyledSettings = [Style, FontColor]
+      Position.X = 69.000000000000000000
+      Position.Y = 197.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Warning'
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 15.000000000000000000
+      OnClick = btnWarningClick
+    end
+  end
+end
