@@ -1,6 +1,6 @@
 # fmx-toast
 ![Delphi Supported Versions](https://img.shields.io/badge/Delphi%20Supported%20Version-10.3%20Rio-blue.svg)
-![Platforms](https://img.shields.io/badge/Supported%20platforms-Windows%20,%20Android%20and%20IOS-red.svg)
+![Platforms](https://img.shields.io/badge/Supported%20platforms-Windows,%20Android%20and%20IOS-red.svg)
 
 Simple customized toast for firemonkey.
 
