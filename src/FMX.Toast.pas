@@ -74,7 +74,6 @@ begin
   FContent.Opacity := 1;
   FContent.Align := TAlignLayout.Contents;
   FContent.Visible := True;
-  FContent.Visible := True;
   FContent.HitTest := False;
   FContent.BringToFront;
 end;
@@ -136,7 +135,7 @@ procedure TToast.Error(const AMessage: string);
 begin
   FType :=  TToastType.Error;
   FMessage := AMessage;
-  Self.Show
+  Self.Show;
 end;
 
 procedure TToast.ForceStop;
@@ -149,7 +148,7 @@ procedure TToast.Info(const AMessage: string);
 begin
   FType :=  TToastType.Info;
   FMessage := AMessage;
-  Self.Show
+  Self.Show;
 end;
 
 class function TToast.New(const AOwner: TFmxObject): TToast;
@@ -174,7 +173,7 @@ procedure TToast.Success(const AMessage: string);
 begin
   FType :=  TToastType.Success;
   FMessage := AMessage;
-  Self.Show
+  Self.Show;
 end;
 
 procedure TToast.Warning(const AMessage: string);
