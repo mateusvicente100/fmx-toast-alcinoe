@@ -8,7 +8,7 @@
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <TargetedPlatforms>37907</TargetedPlatforms>
         <AppType>Application</AppType>
-        <MainSource>Samples.dpr</MainSource>
+        <MainSource>basic.dpr</MainSource>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
         <Base>true</Base>
@@ -107,7 +107,7 @@
         <AUP_READ_PHONE_STATE>true</AUP_READ_PHONE_STATE>
         <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
         <Icns_MainIcns>$(BDS)\bin\delphi_PROJECTICNS.icns</Icns_MainIcns>
-        <SanitizedProjectName>Samples</SanitizedProjectName>
+        <SanitizedProjectName>basic</SanitizedProjectName>
         <DCC_UnitSearchPath>C:\Projetos\Git\mateus-vicente\public\alcinoe\source;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Android)'!=''">
@@ -264,13 +264,13 @@
             <Form>FrmMenu</Form>
             <FormType>fmx</FormType>
         </DCCReference>
-        <DCCReference Include="..\src\FMX.Toast.pas"/>
-        <DCCReference Include="..\src\FMX.Toast.Frame.pas">
+        <DCCReference Include="..\..\src\FMX.Toast.Frame.pas">
             <Form>FrameToast</Form>
             <FormType>fmx</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
-        <DCCReference Include="..\src\FMX.Toast.Types.pas"/>
+        <DCCReference Include="..\..\src\FMX.Toast.pas"/>
+        <DCCReference Include="..\..\src\FMX.Toast.Types.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -289,7 +289,7 @@
         <BorlandProject>
             <Delphi.Personality>
                 <Source>
-                    <Source Name="MainSource">Samples.dpr</Source>
+                    <Source Name="MainSource">basic.dpr</Source>
                 </Source>
                 <Excluded_Packages/>
             </Delphi.Personality>
@@ -309,9 +309,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Android\Debug\libSamples.so" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="Android\Debug\libbasic.so" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Android">
-                        <RemoteName>libSamples.so</RemoteName>
+                        <RemoteName>libbasic.so</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -321,9 +321,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Win32\Debug\Samples.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="Win32\Debug\basic.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
-                        <RemoteName>Samples.exe</RemoteName>
+                        <RemoteName>basic.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

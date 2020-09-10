@@ -1,0 +1,14 @@
+{
+	"hash": "d41d8cd98f00b204e9800998ecf8427e",
+	"updated": "2020-08-27T23:05:33.5091216-03:00",
+	"installedModules": {
+		"github.com/mateusvicente100/fmx-toast": {
+			"name": "fmx-toast",
+			"version": "master",
+			"hash": "1ee337a8111814ff6e176260d17555a6",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		}
+	}
+}

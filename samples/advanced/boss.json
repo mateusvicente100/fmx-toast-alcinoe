@@ -1,0 +1,11 @@
+{
+	"name": "fmx-toast-samples",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./",
+	"projects": [],
+	"dependencies": {
+		"github.com/mateusvicente100/fmx-toast": ">0.0.0"
+	}
+}
